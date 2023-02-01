@@ -5,6 +5,8 @@ import { IdentificarseComponent } from "./identificarse/identificarse.component"
 import { ProductosComponent } from "./productos/productos.component";
 import { CarritoComponent } from "./carrito/carrito.component";
 import { InicioComponent } from './inicio/inicio.component';
+import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -17,7 +19,9 @@ import { InicioComponent } from './inicio/inicio.component';
     CarritoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    SharedModule
   ],
   exports: [
     InicioComponent,

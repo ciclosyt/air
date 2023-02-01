@@ -10,6 +10,8 @@ import { SneakerProductoComponent } from './components/sneaker-producto/sneaker-
 import { SneakerImgComponent } from './components/sneaker-img/sneaker-img.component';
 import { CardCestaComponent } from './components/card-cesta/card-cesta.component';
 import { CardMetodoPagoComponent } from './components/card-metodo-pago/card-metodo-pago.component';
+import { RouterModule } from '@angular/router';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -27,7 +29,21 @@ import { CardMetodoPagoComponent } from './components/card-metodo-pago/card-meto
     CardMetodoPagoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    MaterialModule
+  ],
+  exports: [
+    HeaderComponent,
+    CarruselComponent,
+    FooterComponent,
+    CardContactComponent,
+    CardLoginComponent,
+    CardSneakersComponent,
+    SneakerProductoComponent,
+    SneakerImgComponent,
+    CardCestaComponent,
+    CardMetodoPagoComponent
   ]
 })
 export class SharedModule { }
