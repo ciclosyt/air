@@ -1,8 +1,8 @@
-export interface Shoes {
-    shoes: Shoe[];
-}
+// export interface Shoes {
+//     shoes: Shoe[];
+// }
 
-export interface Shoe {
+export interface Shoes {
     id:          number;
     brand:       string;
     img:         string;

@@ -1,5 +1,7 @@
 <p>productos works!</p>
 <app-header></app-header>
-<div >
-    <app-sneaker-producto></app-sneaker-producto>
+<div class="container-product">
+    <div class="product" *ngFor="let zapatilla of zapatillas">
+        <app-sneaker-producto [item]="zapatilla"></app-sneaker-producto>
+    </div>
 </div>
